@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samson's Emotional Face</title>
+</head>
+<body>
+    <h1>Samson's Emotional Face</h1>
+    <img id="emotion-face" src="https://example.com/default_emotion_face.png" alt="Samson's Face" style="width:300px;height:300px;">
+    <p id="response-text">Samson is ready to talk!</p>
+    <script>
+        function updateEmotion(emotion) {
+            let img = document.getElementById('emotion-face');
+            let text = document.getElementById('response-text');
+            // Update the face and text based on the emotion
+            img.src = `https://example.com/${emotion}_face.png`;  // Example URL
+            text.textContent = `Samson is feeling ${emotion}!`;
+        }
+    </script>
+</body>
+</html>
